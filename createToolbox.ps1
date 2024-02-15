@@ -11,7 +11,7 @@
    Then run in an elevated PowerShell window the following command
    .\createToolbox.ps1
 #>
-$toolboxLocation = "$env:ProgramData\Tools"
+$toolboxLocation = "$env:ProgramData\Toolbox"
 
 If(!(Test-Path -Path $($toolboxLocation))) {
    New-Item -ItemType Directory -Path $($toolboxLocation) | Out-Null
