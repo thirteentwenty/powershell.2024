@@ -7,9 +7,14 @@
    
    Remove the comment block at the end to see the new list of Paths
 .EXAMPLE
-   Update the $toolboxLocation variable to the path you would like to add
-   Then run in an elevated PowerShell window the following command
    .\createToolbox.ps1
+.NOTES
+    Author: Keola McColgan
+    Modified date: 2024.02.15
+    Version 0.01
+
+   Update the $toolboxLocation variable to the path you would like to add
+   The default is to create C:\ProgramData\Toolbox
 #>
 $toolboxLocation = "$env:ProgramData\Toolbox"
 
