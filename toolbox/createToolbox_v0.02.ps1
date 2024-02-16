@@ -26,7 +26,7 @@
    Added function to check if the environment path exists 
 #>
 $toolboxLocation = "$env:ProgramData\Toolbox"
-$downloadURL = "https://pathTo.tld/Files"
+$downloadURL = "https://pathTo.tld/Files/"
 
 $toolList = @(
     ("fileName1.exe");
