@@ -11,13 +11,8 @@
 .NOTES
     Author: Keola McColgan
     Modified date: 2024.02.15
-    Version 0.03
-	
-	2024.02.21
-	Version 0.03
-	Added error control for BITS to fail more elegantly
-
-   Update the $toolboxLocation variable to the path you would like to add
+    Version 0.01
+Update the $toolboxLocation variable to the path you would like to add
    The default is to create C:\ProgramData\Toolbox
 
    2024.02.15 - 1501
@@ -28,6 +23,10 @@
     update the $toolList array with the tools you would like to download
 
    Added function to check if the environment path exists 
+   
+   2024.02.21
+   Version 0.03
+   Added error control for BITS to fail more elegantly
 #>
 $toolboxLocation = "$env:ProgramData\Toolbox"
 $downloadURL = "https://dlc.cetra.us/toolbox/"
