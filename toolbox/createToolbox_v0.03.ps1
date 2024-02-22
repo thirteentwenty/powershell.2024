@@ -12,8 +12,7 @@
 	Variables and arrays to update
 	
 	- Variables
-		$toolboxLocation	::	This is the location on the local machine that you want to store your
-								tools.
+		$toolboxLocation	::	This is the location on the local machine that you want to store your tools.
 		$downloadURL		::	This is the web, or network location your tools are located.
 	- Array
 		$toolList			::	This is the list of files that you want transferred to you local machine.
