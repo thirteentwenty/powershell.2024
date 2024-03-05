@@ -27,7 +27,7 @@
 
 $executionIntervalSeconds = $args[0]
 $timeStart = Get-Date -Format "HH:mm.ss yyyy.MM.dd"
-$appName = "
+$appName = ""
 $appToClose = Get-Process $appName -ErrorAction SilentlyContinue
 
 if ($($executionIntervalSeconds) -eq $null) {
