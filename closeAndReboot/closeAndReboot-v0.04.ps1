@@ -20,6 +20,9 @@
     removed the Graceful shutdown sections in the if/else and
     replaced them with a single function
 
+    Updated the if statement looking for the time parameter when
+    calling the script placing $null on the left side.
+
     Version 0.03
     (2024.03.09)
     Added graceful shutdown of vBox guest OS's
@@ -50,7 +53,7 @@ $timeStart = Get-Date -Format "HH:mm.ss yyyy.MM.dd"
 $appName = "firefox"
 $appToClose = Get-Process $appName -ErrorAction SilentlyContinue
 
-if ($($executionIntervalSeconds) -eq $null) {
+if ($null -eq $($executionIntervalSeconds)) {
     $executionIntervalSeconds = Read-Host Please enter the delay in seconds
 }
 
@@ -75,8 +78,8 @@ if ($appToClose) {
     Write-Output $timeStart
 
     shutdownGuestOS
-    
+
     # Sleep for specified interval 
     Start-Sleep -Seconds $($executionIntervalSeconds)
-    Restart-computer -Force
+    # Restart-computer -Force
 }
