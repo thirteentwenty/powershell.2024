@@ -59,7 +59,7 @@
     Original Release date: 2024.04.11
 #>
 function connecToGraph {
-    Connect-MgGraph -Scopes "User.Read.All","AuditLog.Read.All","Reports.Read.All" -NoWelcome
+    Connect-MgGraph -Scopes "User.Read.All","AuditLog.Read.All","Reports.Read.All","ReportSettings.ReadWrite.All" -NoWelcome
     Write-Host Tenant name - $($currentTenant) -ForegroundColor Gray -BackgroundColor Black
     Write-Host Tenant ID - $($tenantID) -ForegroundColor Gray -BackgroundColor Black
 }
